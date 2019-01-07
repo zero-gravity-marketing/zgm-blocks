@@ -1,13 +1,30 @@
-=== ZGM Basic ===
-Contributors: zgm
-Stable tag: 1.0
-Tested up to: 5.0
-Requires at least: 4.6
+=== ZGM Plugin Boilerplate ===
 
-This is a basic plugin for quick functionality that doesn't belong in a theme
+A boilerplate for wordpress plugins.
 
-== Description ==
+== Setup ==
 
-Swap out the details to describe your plugin:
-1. boilerplate-wordpress-plugin-basic => name of your plugin
-2. ZGM_Basic_Plugin => classname of your plugin
+This plugin uses namespaces following format:
+CompanyName\PluginName\Folder 
+
+It starts with namespace ZGM\Plugin autoloading the app folder;
+
+If using multiple instances of this plugin: Before composer install -> do a find and replace in all folders for Plugin.  Replace with your plugin name.
+
+== Commands ==
+
+To Bootstrap:
+
+1. composer install
+2. npm install
+3. npm run watch
+
+
+All Commands:
+
+composer install
+composer dump-autoload
+npm install
+npm run dev
+npm run watch
+npm run production
