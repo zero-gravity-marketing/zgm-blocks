@@ -1,0 +1,36 @@
+{
+  "name": "zgm/vibrato",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "description": "A Wordpress Plugin Boilerplate",
+  "homepage": "https://github.com/zero-gravity-marketing",
+  "authors": [
+    {
+      "name": "Jon Waldstein",
+      "email": "jon@zerogravitymarketing.com",
+      "homepage": "https://github.com/zero-gravity-marketing"
+    }
+  ],
+  "keywords": [
+    "wordpress"
+  ],
+  "support": {
+    "issues": "https://github.com/zero-gravity-marketing"
+  },
+  "require": {
+    "php": ">=7.2.0",
+    "composer/installers": "~1.0",
+    "htmlburger/carbon-fields": "^3.0.1"
+  },
+  "config": {
+    "optimize-autoloader": true
+  },
+  "autoload": {
+    "psr-4": {
+        "ZGM\\Plugin\\": "app/"
+    },
+    "classmap": [
+        "app/"
+    ]
+  }
+}
